@@ -1,0 +1,173 @@
+/* 
+    Created on : 4 avr. 2022, 15:05:43
+    Author     : Veschembes
+*/
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080710;
+}
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+        );
+    left: -100%;
+    bottom: -10px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+        );
+    right: -100%;
+    top: 260px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 2fr 0.1fr 5fr 0.1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    margin-top: 1%;
+} 
+
+.parent2 {
+    display: grid;
+    grid-template-columns: 2.5fr 5fr 2.5fr;
+    grid-template-rows: 1fr ;
+    grid-column-gap: 0px;
+    margin-top:1%
+}
+
+.div-titre {
+    text-align: center;
+    flex: 1;
+}
+
+.div1 {  grid-area: 1 / 3 / 2 / 4;
+         background-color: rgba(208,208,280,0.25);
+         backdrop-filter: blur(10px);
+         padding: 10px;
+         margin: 0 auto;
+         border-radius: 15px;
+         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.div2 { grid-area: 1 / 2 / 2 / 3;
+        background-color: rgba(208,208,280,0.25);
+        backdrop-filter: blur(10px);
+        padding: 10px;
+        margin: 0 auto;
+        max-width: 500px;
+        max-height: 600px;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.div3 { grid-area: 1 / 4 / 2 / 5;
+        background-color: rgba(208,208,280,0.25);
+        backdrop-filter: blur(10px);
+        padding: 10px;
+        margin: 0 auto;
+        max-width: 500px;
+        max-height: 600px;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.div4 { 
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 70%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 20px 35px;
+    margin-top: 5%;
+}
+
+.div4 *{
+    font-family: 'Poppins',sans-serif;
+
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+img {
+    border-radius: 15px; 
+}
+
+#precedent,#suivant {
+    border-radius: 15px; 
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 0.5;
+    font-size: 100px;
+    color: rgba(220, 220, 220, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+    height: 100%
+}
+
+#slider:hover #precedent,#slider:hover #suivant {
+    opacity: 1;
+}
+
+#prix {
+    font-size: 40px;
+    font-style: italic;
+}
+
+#details {
+    line-height: 1.5;
+}
+
+button{
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#deconnexion {
+    width: 10%;
+}
+
+span{
+    color:#ffffff;
+}
